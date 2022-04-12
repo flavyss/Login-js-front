@@ -1,0 +1,109 @@
+/*Reset Basico da pagina*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    height: 100%;
+    background-image: url('../images/bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Open Sans', sans-serif;
+    /*font-family: 'Oswald', sans-serif;*/
+}
+
+/*Variaveis globais do site*/
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+.clear{
+    clear: both;
+}
+
+/*Conteudo do site*/
+
+header > .container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header form{
+    text-align: center;
+    width: 40%;
+    padding: 30px;
+    color: white;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.87);
+}
+
+header form h2{
+    font-size: 30px;
+    font-weight: lighter;
+    font-variant: small-caps;
+}
+
+header form p{
+    padding: 5px 0;
+    font-size: 18px;
+    text-align: justify;
+    font-variant: small-caps;
+}
+
+header form .inp{
+    width: 80%;
+    text-align: center;
+    margin: 15px auto;
+}
+
+header form input[type='text'],
+header form input[type='password']{
+    width: 100%;
+    outline: none;
+    padding: 5px 0;
+    background-color: transparent;
+    border: none;
+    color: white;
+    border-bottom: 1px solid rgb(43, 255, 0);
+    font-size: 16px;
+}
+
+header form input[type='text']:focus,
+header form input[type='password']:focus{
+    transition: 1s;
+    border-bottom: 1px solid rgb(0, 60, 255);
+}
+
+header form input[type='button']{
+    width: 50%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: rgb(43, 255, 0);
+    border: 1px solid rgb(43, 255, 0);
+    border-radius: 5555px;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+    margin-top: 15px;
+}
+
+@media screen and (max-width: 820px){
+    header form{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 400px){
+    header form{
+        width: 100%;
+    }
+}
